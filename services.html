@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Classic - Blog Page</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400"> 
+    <link rel="stylesheet" href="css/bootstrap.min.css">                                     
+    <link rel="stylesheet" href="css/style.css">
+
+<style>
+	/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+	</style>
+
+</head>
+
+    <body>
+       
+        <div class="header">
+            <div class="container-fluid">
+                <div class="header-inner">
+                    <a href="#" class="navbar-brand site-name"><img src="img/LOGOLAUNDRY.jpg" width="190" height="120" alt=""/></a>
+                    
+            
+                    <nav class="navbar main-nav">
+
+                        <button class="navbar-toggler hidden-md-up" type="button" data-toggle="collapse" data-target="#tmNavbar">
+                            &#9776;
+                      </button>
+                        
+                        <div class="collapse navbar-toggleable-sm" id="tmNavbar">
+                            <ul class="nav navbar-nav">
+                                <li class="nav-item">
+                                    <a href="index.html" class="nav-link">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="about.html" class="nav-link">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="services.html" class="nav-link">Services</a>
+                                </li>
+								  <li class="nav-item">
+                                    <a href="gallery.html" class="nav-link">Gallery&nbsp;</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="contact.html" class="nav-link">Contact</a>
+                                </li>
+                            </ul>                        
+                        </div>
+                        
+                  </nav>  
+
+              </div>                                  
+            </div>            
+        </div>
+
+        <div class="blog-img-container">
+            
+        </div>
+
+        <section class="section">
+            <div class="container-fluid">
+				<button class="accordion">What are you hours of operation?</button>
+<div class="panel">
+  <p>We're open 7 days a week from 6:00 AM to 10:00 PM. Last wash is recommended by 8:30 PM.</p>
+</div>
+
+<button class="accordion">Do you offer wash-and-fold service?</button>
+<div class="panel">
+  <p>Yes! Our wash-and-fold service is available daily. Drop off your laundry and we'll clean, dry, and neatly fold it for you--usually ready the same day.</p>
+</div>
+
+<button class="accordion">What types machines do you have?</button>
+<div class="panel">
+  <p>We offer a full range of high-capacity washers and dryers, including machines. Change machines are also available inside.</p>
+</div>
+					<button class="accordion">Can I pay with card, or is it coin-only?</button>
+<div class="panel">
+  <p>We accept coins, credit/debit cards, and mobile payments on most machines. Change machines are also available inside.</p>
+</div>
+
+<button class="accordion">Are attendants on site?</button>
+<div class="panel">
+  <p>Yes, we have friendly attendants available throughout the day to assist with questions, machine issues, and wash-and-fold orders.</p>
+</div>
+
+<button class="accordion">Do you offer free Wi-Fi?</button>
+<div class="panel">
+  <p>Yes! Customers can enjoy free Wi-Fi while they wait. We also provide seating and charging outlets.</p>
+</div>
+				<button class="accordion">Is parking available?</button>
+<div class="panel">
+  <p>Yes, we offer plenty of on-site parking, including easy access for loading and unloading laundry.</p>
+</div>
+                <div class="row"></div>
+                
+            </div>
+        </section>
+        
+        <footer class="footer">
+            <div class="container-fluid">
+                <div class="row">
+                  <div class="clearfix hidden-lg-up"></div>
+              </div>
+
+                <div class="row">
+                    <div class="col-xs-12 copyright-col">
+                        <p class="copyright-text">Mission Coin Laundry, 2025</p>
+                  </div>
+              </div>
+            </div>
+        </footer>
+
+
+        <script src="js/jquery-1.11.3.min.js"></script>
+        <script src="https://www.atlasestateagents.co.uk/javascript/tether.min.js"></script> 
+        <script src="js/bootstrap.min.js"></script>
+		<script>
+		var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+		</script>
+       
+</body>
+</html>
